@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0BA5BDEB2178F6E200F00E85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA5BDEA2178F6E200F00E85 /* AppDelegate.swift */; };
-		0BA5BDED2178F6E200F00E85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA5BDEC2178F6E200F00E85 /* ViewController.swift */; };
 		0BA5BDF02178F6E200F00E85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BA5BDEE2178F6E200F00E85 /* Main.storyboard */; };
 		0BA5BDF22178F6E500F00E85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BA5BDF12178F6E500F00E85 /* Assets.xcassets */; };
 		0BA5BDF52178F6E500F00E85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BA5BDF32178F6E500F00E85 /* LaunchScreen.storyboard */; };
 		0BA5BE002178F6E500F00E85 /* canvasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA5BDFF2178F6E500F00E85 /* canvasTests.swift */; };
 		0BA5BE0B2178F6E500F00E85 /* canvasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA5BE0A2178F6E500F00E85 /* canvasUITests.swift */; };
+		0BA5BE192178F8AB00F00E85 /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA5BE182178F8AB00F00E85 /* CanvasViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		0BA5BDE72178F6E200F00E85 /* canvas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = canvas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BA5BDEA2178F6E200F00E85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0BA5BDEC2178F6E200F00E85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0BA5BDEF2178F6E200F00E85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0BA5BDF12178F6E500F00E85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BA5BDF42178F6E500F00E85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		0BA5BE062178F6E500F00E85 /* canvasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = canvasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BA5BE0A2178F6E500F00E85 /* canvasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = canvasUITests.swift; sourceTree = "<group>"; };
 		0BA5BE0C2178F6E500F00E85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BA5BE182178F8AB00F00E85 /* CanvasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				0BA5BDEA2178F6E200F00E85 /* AppDelegate.swift */,
-				0BA5BDEC2178F6E200F00E85 /* ViewController.swift */,
 				0BA5BDEE2178F6E200F00E85 /* Main.storyboard */,
 				0BA5BDF12178F6E500F00E85 /* Assets.xcassets */,
 				0BA5BDF32178F6E500F00E85 /* LaunchScreen.storyboard */,
 				0BA5BDF62178F6E500F00E85 /* Info.plist */,
+				0BA5BE182178F8AB00F00E85 /* CanvasViewController.swift */,
 			);
 			path = canvas;
 			sourceTree = "<group>";
@@ -256,7 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BA5BDED2178F6E200F00E85 /* ViewController.swift in Sources */,
+				0BA5BE192178F8AB00F00E85 /* CanvasViewController.swift in Sources */,
 				0BA5BDEB2178F6E200F00E85 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,7 +439,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.canvas;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andre.campbell.canvas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -457,7 +457,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.canvas;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andre.campbell.canvas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
